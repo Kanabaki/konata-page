@@ -17,38 +17,79 @@
 <nav>
     <ul>
         <li>
-            About Konata
+            <a href = "#about-konata">About Konata</a>
         </li>
         <li>
-            Gallery
+           <a href = "#gallery">Gallery</a> 
         </li>
         <li>
-            Fun Facts
+            <a href = "#fun-facts">Fun Facts</a>
         </li>
 
     </ul>
 </nav>
     </header>
-<section>
-    <article>
+<section >
+    <article id = "about-konata">
         <h2>About Konata</h2>
         <img src = "./Assets/Intro_Kanata.png" alt = "Full body picture of Izumi Konata">
         <p>Konata Izumi is one of the main characters of the CGDCT Comedy style <strong>Lucky Star</strong> series. She is the daughter of 
         Soujirou Izumi (Father) and Kanata Izumi (Mother). She's played by Aya Hirano in the anime and 
         was originally created in a Japanese four-panel manga series by Kagami Yoshimizu and was serialized
-         in Kadokawa Shoten's Comptiq magazine since December 2003.
+         in Kadokawa Shoten's Comptiq magazine since December 2003.The adaptation to that, debuted in 2007.
         </p>
     </article>
-    <article>
+    <article id = "gallery">
         <h2>Gallery</h2>
-        <img src = "./Assets/Konata_Bedroom_Computer.jpg" alt = "Konata by her computer drawn by Akitsu_Mikami">
+    <div class="carousel">
+        <button class="carousel__button carousel__button--left">
+            <img src="./Assets/Carousel/Pink_Star.png" alt="Pink Star">
+        </button>
+        <div class="carousel__track-container">
+<ul class="carousel__track">
+    <li class="carousel__slide current-slide">
+        <img class="carousel_img" src = "./Assets/Carousel/Konata_Bedroom_Computer.jpg" alt="Konata by her computer drawn by Akitsu_Mikami">
+    </li>
+    <li class="carousel__slide">
+        <img class="carousel_img" src = "./Assets/Carousel/Konata_atDesk_homework.gif" alt="">
+    </li>
+    <li class="carousel__slide">
+        <img class="carousel_img" src = "./Assets/Carousel/Konata_onlook.png" alt="">
+    </li>
+    <li class="carousel__slide">
+        <img class="carousel_img" src = "./Assets/Carousel/Konata_point.jpg" alt="">
+    </li>
+    <li class="carousel__slide">
+        <img class="carousel_img" src = "./Assets/Carousel/Konata_Tomodachis.jpg" alt="">
+    </li>
+    <li class="carousel__slide">
+        <img class="carousel_img" src = "./Assets/Carousel/Konata_w_greenBook.jpg" alt="">
+    </li>
+</ul>
+        </div>
+        <button class="carousel__button carousel__button--right">
+            <img src="./Assets/Carousel/Pink_Star.png" alt="Pink Star">
+        </button>
+        <div class="carousel__nav">
+<button class="carousel__indicator current-slide"></button>
+<button class="carousel__indicator"></button>
+<button class="carousel__indicator"></button>
+<button class="carousel__indicator"></button>
+<button class="carousel__indicator"></button>
+<button class="carousel__indicator"></button>
+        </div>  
+    </div>
     </article>
-    <article>
+    <article id = "fun-facts">
        <h2>Fun Facts</h2> 
-<p>Konata loves eating Chocolate Cornets</p>
-<img src = "./Assets/Konata_Choco.gif" alt = "gif of Konata eating a chocolate cornet">
+    <div class = "konata-choco-gif-img-cntnr">
+        <p>Konata loves eating Chocolate Cornets</p>
+        <img 
+        src = "./Assets/Konata_Choco.gif" alt = "gif of Konata eating a chocolate cornet">
+    </div>
     </article>
     <article>
+        <p id="crazy-p"></p>
         <img src = "./Assets/Konata_Purple_Stars.jpg" alt = "Konata holding a pencil in front of a purple star background">
     </article>
 </section>
@@ -56,4 +97,6 @@
     <footer>
 <p>Links to diff sites</p>
     </footer>
+    <script src = "./script.js"></script>
 </body>
+</html>
