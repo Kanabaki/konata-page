@@ -12,9 +12,8 @@ header h1 ,header h2{
 }
 header,p, h2{
 color:pink;
-
 }
-
+h2 { padding:05px 0px 05px 5px;}
 
 header {
     width:100%;
@@ -51,7 +50,7 @@ img {
     margin: 0 auto;
 }
 .carousel__img {
-    width:20%;
+    width:100%;
     height: 100%;
     object-fit: cover;
 }
@@ -96,6 +95,7 @@ img {
     width:30px;
 }
 .carousel__nav {
+   
     display:flex;
     justify-content: center;
     padding:5px 0;
@@ -107,11 +107,26 @@ img {
     height: 15px;
     background-color:rgb(255, 240, 171);
     margin: 0px 7px;
+    cursor:pointer;
 }
 .carousel__indicator.current-slide {
     background-color:rgb(179, 116, 0);
 }
+.is-hidden {display:none;}
 /*-------------------------------------------------------------------------------------------------------------*/
 footer, h2{
     background-color:rgb(255, 240, 171);
+}
+/*Media Queries-----------------------------------------------------------------*/
+/*Mobile Devices*/
+@media screen and (max-width:480px){
+
+}
+/*Tablets*/
+@media screen and (max-width: 768px) {
+
+}
+/*Laptop*/
+@media screen and (min-width: 768px) {
+
 }
